@@ -16,6 +16,6 @@ for row in random_matrix:
     for elem in row:
         print(f'{elem:^4}', end=" ")
     print("]")
-print(f'Sum of diagonals \\ : {sum_diagonals:.3f}')
+print(f'Sum of diagonals \\ : {sum_diagonals}')
 # print(f'Sum of diagonals / : {sum_diagonals_2:.3f}')
-print(f'Sum of last columns: {sum_last_column:.3f}')
+print(f'Sum of last columns: {sum_last_column}')
