@@ -1,6 +1,6 @@
 dictionary_1 = {'a': 300, 'b': 400}
 dictionary_2 = {'c': 500, 'd': 600}
-'''
+
 # Обьединяем с помощью цикла for
 merged_dictionary = {}
 # Перебираем пары словарей поочередно с помощью метода .items()
@@ -19,7 +19,7 @@ print(merged_dictionary, "__2__")
 # Обьединяем с помощью оператора ( ** )
 merged_dictionary = {**dictionary_1, **dictionary_2}
 print(merged_dictionary, "__3__")
-'''
+
 # Обьединяем с помощью оператора ( | ) в версии  3.9
 merged_dictionary = dictionary_1 | dictionary_2
 print(merged_dictionary, "__4__")
