@@ -1,7 +1,7 @@
 import random as rd
 
 # первое (берем длину множества сгенерированого списка)
-print(len(set(rd.randint(1, 100) for i in range(0, 20))))
+print(len(set(rd.randint(1, 20) for i in range(0, 20))))
 
 # второе (тоже самое только от обьединенных множеств)
 print(len(
