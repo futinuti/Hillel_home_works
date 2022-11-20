@@ -36,8 +36,7 @@ list_1 = stih.split()
 cleaned_list = []
 
 for word in list_1:
-    cleaned_word = ''.join(char for char in word
-                           if char.isalnum() and char.isalpha())
+    cleaned_word = ''.join(char for char in word if char.isalpha())
     cleaned_list.append(cleaned_word)
 
 clean_empty_str(cleaned_list)
@@ -46,8 +45,8 @@ rez_dictionary = {}
 
 for key in cleaned_list:
     counter = 0
-    for letter in cleaned_list:
-        if key == letter:
+    for word in cleaned_list:
+        if key == word:
             counter += 1
     rez_dictionary[key] = counter
 
