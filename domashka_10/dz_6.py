@@ -10,7 +10,7 @@ def max_quantity_word(dictionary):
     for keyw, val in dictionary.items():
         if val == max(dictionary.values()):
             print('Наиболее встречается "', keyw, '", встречается ', val, 'раз')
-    """  if val == min(dictionary.values()):
+    """ if val == min(dictionary.values()):
             min_dict[keyw] = val
     print('Наименее встречается "', list(min_dict.keys()), '", встречается ',
           min(dictionary.values()), 'раз')"""
