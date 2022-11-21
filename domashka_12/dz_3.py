@@ -7,13 +7,13 @@ def gen_prime_numbers(n, z):
     :param z: finish
     :return: nothing
     """
-    # print('n', n, 'z', z)
+    print('n', n, 'z', z)
     if n > z:
         n, z = z, n
     count = 0
     for char in range(n, z + 1):
         tag = 1
-        for i in range(2, int(char)):
+        for i in range(2, char):
             if char % i != 0:
                 tag = 0
             if char % i == 0:
