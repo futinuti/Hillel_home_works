@@ -1,4 +1,4 @@
-#
+# простой вариант
 # f = open('exmp.txt', 'w')
 # i = "true"
 # while i != "":
