@@ -4,10 +4,9 @@ def set_glue():
     b = input("b: ")
 
     try:
-        print("a + b", a + b)
-    except TypeError:
+        print("a + b =", int(a) + int(b))
+    except ValueError:
         print("a + b = ", str(a) + str(b))
-
 
 set_glue()
 
