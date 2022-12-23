@@ -14,6 +14,5 @@ def longest_words():
             elif i[1] == max:
                 f.append(i)
         print(f)
-        file.close()
 
 longest_words()
