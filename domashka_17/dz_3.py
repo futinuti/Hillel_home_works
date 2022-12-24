@@ -17,4 +17,4 @@ def update_hero(**parameters):
             file.write(line_new)
 
 
-update_hero(hero="Halk", power=450, Y=2.3)
+update_hero(hero="Hulk", power=450, Y=2.3)
