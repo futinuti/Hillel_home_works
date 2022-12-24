@@ -1,8 +1,9 @@
 def longest_words():
     with open('article.txt', 'r') as file:
         text = file.read()
-        a = text.replace("\n", " ")
-        text = a.split(" ")
+        text = text.replace('"', '')
+        text = text.replace("\n", " ")
+        text = text.split(" ")
         g = dict(map(lambda x: (x, len(x)), text))
         f = []
         max = 0
