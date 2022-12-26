@@ -21,7 +21,7 @@ def visioner_array(arr):
     """
     for el in arr:
         for col in el:
-            print(f'{col:^6}', end='')
+            print(f'{col:^3}', end='')
         print()
     print()
 
