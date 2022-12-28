@@ -48,8 +48,8 @@ class Ship:
                     for k in range(3):
                         for j in range(palubi + 2):
                             self.point_nearby.append(
-                                str(int(start_coord[0]) - 1 + k) + ';' +
-                                str(int(start_coord[2]) - 1 + j))
+                                str(gorizont - 1 + k) + ';' +
+                                str(vertical - 1 + j))
             else:
                 self.ship_ok = 0
                 break
@@ -64,10 +64,11 @@ class Board:
     matrix_pole = []
 
     def __init__(self):  # пустое поле
-
         self.matrix_pole = [["░░" for __ in range(11)]
                             for _ in range(11)]
+        self.name_pole()
 
+    def name_pole(self):
         for i in range(10):
             self.matrix_pole[0][0] = ""
             self.matrix_pole[0][i+1] = self.verhn_liniya[i]
@@ -91,13 +92,19 @@ class Board:
                         self.flot += ship.point_ship
                         self.all_ships_in += ship.point_nearby
                         break
+        self.insert_ship()
+
+    def insert_ship(self):
         for y in range(10):
             for x in range(10):
                 m_p_coord = str(x) + ';' + str(y)
                 if m_p_coord in self.flot:
                     self.matrix_pole[x+1][y+1] = '██'
 
+    def draw_board(self):
+        visioner_array(self.matrix_pole)
+
 
 bd = Board()
 bd.n_ships()
-visioner_array(bd.matrix_pole)
+bd.draw_board()
